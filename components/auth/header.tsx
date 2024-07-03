@@ -1,6 +1,7 @@
 import { Poppins } from "next/font/google";
 
 import { cn } from "@/lib/utils";
+import { ExclamationTriangleIcon } from "@radix-ui/react-icons";
 
 const font = Poppins({
     subsets: ["latin"],
@@ -20,10 +21,10 @@ export const Header = ({
                 "text-3xl",
                 font.className
             )}>
-                Auth
+                🔐 Auth
             </h1>
-            <p className="text-muted-foreground text-sm">
-                {label}
+            <p className="text-muted-foreground text-sm flex gap-x-2 items-center">
+            <ExclamationTriangleIcon className="text-destructive" />  {label}
             </p>
         </div>
     )

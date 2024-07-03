@@ -22,6 +22,7 @@ export const CardWrapper = ({
     children,
     backButtonLabel,
     backButtonHref,
+    headerLabel,
     showSocial
 }: CardWrapperProps) => {
     return (
