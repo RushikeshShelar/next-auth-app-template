@@ -46,7 +46,7 @@ export const LoginForm = () => {
                 .then((data) => {
                     setError(data?.error);
                     // TODO: COME BACK FOR 2FA
-                    // setSuccess(data?.success);
+                    setSuccess(data?.success);
                 })
         });
         ;

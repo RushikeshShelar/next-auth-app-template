@@ -8,12 +8,14 @@ const font = Poppins({
     weight: ['600'],
 });
 
-interface HeaderProps{
-    label:string,
+interface HeaderProps {
+    label?: string;
+    icon?: React.ReactNode;
 }
 
 export const Header = ({
     label,
+    icon
 }: HeaderProps) => {
     return (
         <div className="w-full flex flex-col gap-y-4 items-center justify-center">
@@ -24,7 +26,7 @@ export const Header = ({
                 🔐 Auth
             </h1>
             <p className="text-muted-foreground text-sm flex gap-x-2 items-center">
-            <ExclamationTriangleIcon className="text-destructive" />  {label}
+                 {icon} {label}
             </p>
         </div>
     )

@@ -6,13 +6,14 @@ import {
     CardFooter,
     CardHeader
 } from "@/components/ui/card"
+import { ExclamationTriangleIcon } from "@radix-ui/react-icons";
 
 
 export const ErrorCard = () => {
     return (
         <Card className="w-[400px] shadow-md">
             <CardHeader>
-                <Header label="Something Went Wrong!!" />
+                <Header label="Something Went Wrong!!" icon={<ExclamationTriangleIcon className="text-destructive" />} />
             </CardHeader>
 
             <CardFooter>
